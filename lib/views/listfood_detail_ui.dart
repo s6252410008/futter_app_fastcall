@@ -53,13 +53,13 @@ class _ListFoodDetailUIState extends State<ListFoodDetailUI> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red[50],
+      backgroundColor: Colors.blueGrey[100],
       appBar: AppBar(
         title: Text(
-          'รายละเอียดร้าน',
+          'รายละเอียด',
         ),
         centerTitle: true,
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.blueGrey,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -87,9 +87,9 @@ class _ListFoodDetailUIState extends State<ListFoodDetailUI> {
                 width: MediaQuery.of(context).size.width - 80.0,
                 //height: 100.0,
                 child: Card(
-                  color: Colors.red[100],
+                  color: Colors.blueGrey[100],
                   elevation: 10.0,
-                  shadowColor: Colors.red[100],
+                  shadowColor: Colors.blueGrey[200],
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5.0),
                   ),
@@ -194,7 +194,7 @@ class _ListFoodDetailUIState extends State<ListFoodDetailUI> {
                     ),
                     label: Text('เปิดเว็ป'),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.red,
+                      primary: Colors.blueGrey,
                       fixedSize: Size(
                         130.0,
                         50.0,
@@ -212,7 +212,7 @@ class _ListFoodDetailUIState extends State<ListFoodDetailUI> {
                     ),
                     label: Text('โทรเลย'),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.red,
+                      primary: Colors.blueGrey,
                       fixedSize: Size(
                         130.0,
                         50.0,
@@ -230,7 +230,7 @@ class _ListFoodDetailUIState extends State<ListFoodDetailUI> {
                     ),
                     label: Text('พิกัด'),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.red,
+                      primary: Colors.blueGrey,
                       fixedSize: Size(
                         130.0,
                         50.0,
