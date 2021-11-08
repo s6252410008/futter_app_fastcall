@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_fastcall/models/foodlist.dart';
+import 'package:flutter_app_fastcall/models/list.dart';
+import 'package:flutter_app_fastcall/views/home_ui.dart';
 import 'package:flutter_app_fastcall/views/listfood_detail_ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class PttUI extends StatefulWidget {
@@ -14,59 +15,72 @@ class _ListFoodNewUIState extends State<PttUI> {
     
     
     FoodList(
-name: ' ครัวโอซี',
-website: '  -',
-facebook: ' ครัวโอซีOrigina',
-mobile: ' 094 666 3565',
-image: 'r_logo_1.jpg',
-pikat: 'https://goo.gl/maps/N614aim4N8Woh53y7',
+name: ' ปั๊ม PTT',
+website: '  เปิด 24 ชั่วโมง',
+facebook: ' -',
+mobile: ' -',
+image: 'p_1.png',
+pikat: 'https://goo.gl/maps/Fb69aUSnofmRZAAK8',
 ),
     FoodList(
-name: 'ร้าน จีโน่ สเต็ก',
-website: '  -',
-facebook: ' ร้าน จีโน่ สเต็ก',
-mobile: ' 0621634699',
-image: 'r_logo_2.jpg',
-pikat: 'hhttps://goo.gl/maps/oXWtiNHoJ7TqRZbV8',
+name: 'ปั๊ม PT สาขาทวีวัฒนา',
+website: '  24 ชั่วโมง',
+facebook: ' -',
+mobile: ' -',
+image: 'p_2.png',
+pikat: 'https://goo.gl/maps/b2EZyYAemoVzcSzu5',
 ),
     FoodList(
-name: 'บ้านสวนริมคลอง',
-website: '  -',
-facebook: 'บ้านสวนริมคลอง',
-mobile: ' 0612543322',
-image: 'r_logo_3.jpg',
-pikat: 'https://goo.gl/maps/56S3BUppfoHVWXPb9',
+name: ' ปั๊ม esso',
+website: '  24 ชั่วโมง',
+facebook: ' -',
+mobile: ' -',
+image: 'p_3.png',
+pikat: 'https://goo.gl/maps/qPWMmJwFF1BXSbtx8',
 ),
-   
-   
+     FoodList(
+name: 'ปั้มคาลเท็กซ์ ',
+website: '  24 ชั่วโมง',
+facebook: ' -',
+mobile: ' -',
+image: 'p_4.png',
+pikat: 'https://goo.gl/maps/KVDszWGpzrtiQKxk8',
+),
+   FoodList(
+name: ' ปั๊มน้ำมันบางจาก',
+website: '  เปิด 24 ชั่วโมง',
+facebook: ' -',
+mobile: ' -',
+image: 'p_5.png',
+pikat: 'https://goo.gl/maps/MKANrZV4NQPkBRK79',
+),
+
+
+
 ]; 
   
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[100],
+      backgroundColor: Colors.yellow[100],
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
+        centerTitle: true,
+        title: Text(
+          'จุดพักรถใกล้ตัวคุณ',
+        ),
+        backgroundColor: Colors.blue[400],
         elevation: 0,
         leading: IconButton(
-          onPressed: (){},
+          onPressed: (){
+             Navigator.pop(context);
+          },
           icon: Icon(
             Icons.arrow_back_ios,
           ),
         ),
         actions: <Widget>[
-          IconButton(
-            onPressed: (){},
-            icon: Icon(
-              Icons.search,
-            ),
-          ),
-          IconButton(
-            onPressed: (){},
-            icon: Icon(
-              Icons.camera_alt,
-            ),
-          ),
+         
+          
         
         
         

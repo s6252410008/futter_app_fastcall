@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_fastcall/models/foodlist.dart';
+import 'package:flutter_app_fastcall/models/list.dart';
+import 'package:flutter_app_fastcall/views/home_ui.dart';
 import 'package:flutter_app_fastcall/views/listfood_detail_ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class FrakUI extends StatefulWidget {
@@ -14,60 +15,86 @@ class _ListFoodNewUIState extends State<FrakUI> {
     
     
     FoodList(
-name: ' ครัวโอซี',
-website: '  -',
-facebook: ' ครัวโอซีOrigina',
-mobile: ' 094 666 3565',
-image: 'r_logo_1.jpg',
-pikat: 'https://goo.gl/maps/N614aim4N8Woh53y7',
+name: ' ขนมฝรั่งแม่ไน้',
+website: '  09.00 - 18.00 น',
+facebook: ' ขนมฝรั่งแม่ไน้',
+mobile: ' 0813030803',
+image: 'f_logo_1.jpg',
+pikat: 'https://goo.gl/maps/BvLBcb8jKjuHbMQeA',
 ),
     FoodList(
-name: 'ร้าน จีโน่ สเต็ก',
-website: '  -',
-facebook: ' ร้าน จีโน่ สเต็ก',
-mobile: ' 0621634699',
-image: 'r_logo_2.jpg',
-pikat: 'hhttps://goo.gl/maps/oXWtiNHoJ7TqRZbV8',
+name: ' แม่ประไพศรี ข้าวเหนียวมูล',
+website: '  04.00 -17.00 น.',
+facebook: ' แม่ประไพศรี ข้าวเหนียวมูล',
+mobile: ' 025271407',
+image: 'f_logo_2.jpg',
+pikat: 'https://goo.gl/maps/BvLBcb8jKjuHbMQeA',
 ),
     FoodList(
-name: 'บ้านสวนริมคลอง',
-website: '  -',
-facebook: 'บ้านสวนริมคลอง',
-mobile: ' 0612543322',
-image: 'r_logo_3.jpg',
-pikat: 'https://goo.gl/maps/56S3BUppfoHVWXPb9',
+name: ' นนท์เบเกอรี่',
+website: '  8.00-20.00 น.',
+facebook: ' นนท์เบเกอรี่',
+mobile: ' 025271752',
+image: 'f_logo_3.jpg',
+pikat: 'https://goo.gl/maps/Rz9pSLWyQrAbnNpU6',
 ),
-   
+   FoodList(
+name: ' กุยช่าย 7 สี',
+website: '  7.00-19.00 น.',
+facebook: ' กุยช่าย 7 สี',
+mobile: ' 089 442 2708',
+image: 'f_logo_4.jpg',
+pikat: 'https://goo.gl/maps/L2NbmBvzmJjqZrVu7',
+),
+ 
+  FoodList(
+name: ' ปังปัง 85 องศา',
+website: '  8.00-18.00 น.',
+facebook: ' ปังปัง 85 องศา',
+mobile: ' 0832428550',
+image: 'f_logo_5.jpg',
+pikat: 'https://goo.gl/maps/A44rtpoNnLEAjQB8A',
+),
+  FoodList(
+name: ' ทอดมันท่าน้ำนนท์',
+website: '  12.00-20.00 น.',
+facebook: ' ทอดมันท่าน้ำนนท์',
+mobile: ' -',
+image: 'f_logo_6.jpg',
+pikat: 'https://goo.gl/maps/CqiYVnAc7kQxH43Q9',
+),
+  FoodList(
+name: ' บัวลอยเมืองนนท์',
+website: '  17.00-24.00 น.',
+facebook: ' บัวลอยเมืองนนท์',
+mobile: ' 025271752',
+image: 'f_logo_7.jpg',
+pikat: 'https://goo.gl/maps/wEmZATQZUNnKdYfGA',
+),
    
 ]; 
   
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[100],
+      backgroundColor: Colors.yellow[100],
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
+        centerTitle: true,
+        title: Text(
+          'ร้านขายของฝากใกล้ตัวคุณ',
+        ),
+        backgroundColor: Colors.pink[300],
         elevation: 0,
         leading: IconButton(
-          onPressed: (){},
+          onPressed: (){
+             Navigator.pop(context);
+          },
           icon: Icon(
             Icons.arrow_back_ios,
           ),
         ),
         actions: <Widget>[
-          IconButton(
-            onPressed: (){},
-            icon: Icon(
-              Icons.search,
-            ),
-          ),
-          IconButton(
-            onPressed: (){},
-            icon: Icon(
-              Icons.camera_alt,
-            ),
-          ),
-        
+          
         
         
         ],

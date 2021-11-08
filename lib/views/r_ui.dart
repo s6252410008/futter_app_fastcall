@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_fastcall/models/foodlist.dart';
+import 'package:flutter_app_fastcall/models/list.dart';
+import 'package:flutter_app_fastcall/views/home_ui.dart';
 import 'package:flutter_app_fastcall/views/listfood_detail_ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class rUI extends StatefulWidget {
@@ -15,58 +16,92 @@ class _ListFoodNewUIState extends State<rUI> {
     
     FoodList(
 name: ' ครัวโอซี',
-website: '  -',
+website: '  11.00 น.-19.30 น.',
 facebook: ' ครัวโอซีOrigina',
-mobile: ' 094 666 3565',
+mobile: ' 0946663565',
 image: 'r_logo_1.jpg',
 pikat: 'https://goo.gl/maps/N614aim4N8Woh53y7',
 ),
     FoodList(
-name: 'ร้าน จีโน่ สเต็ก',
-website: '  -',
-facebook: ' ร้าน จีโน่ สเต็ก',
+name: ' ร้านจีโน่สเต็ก',
+website: '  14.00 น.-21.00 น.',
+facebook: ' ร้านจีโน่สเต็ก',
 mobile: ' 0621634699',
 image: 'r_logo_2.jpg',
 pikat: 'hhttps://goo.gl/maps/oXWtiNHoJ7TqRZbV8',
 ),
     FoodList(
-name: 'บ้านสวนริมคลอง',
-website: '  -',
-facebook: 'บ้านสวนริมคลอง',
+name: ' บ้านสวนริมคลอง',
+website: '  19.00 น.',
+facebook: ' บ้านสวนริมคลอง',
 mobile: ' 0612543322',
 image: 'r_logo_3.jpg',
 pikat: 'https://goo.gl/maps/56S3BUppfoHVWXPb9',
 ),
-   
+   FoodList(
+name: ' COAL Bistro',
+website: '  11.00 น.-22.00 น.',
+facebook: ' COAL Bistro',
+mobile: ' 0624455625',
+image: 'r_logo_4.jpg',
+pikat: 'https://g.page/coal-bkk?share',
+),
+ FoodList(
+name: ' ร้านบ้านครัวส้มตำ',
+website: '  9.00 น.-21.30 น.',
+facebook: ' ร้านบ้านครัวส้มตำ',
+mobile: ' 0636425317',
+image: 'r_logo_5.jpg',
+pikat: 'https://goo.gl/maps/EMQka3KHNZhT3HYn6',
+),
+FoodList(
+name: ' ร้านอาหารเฮียช้าง ไทย จีน อีสาน',
+website: '  11.00 น.-23.00 น.',
+facebook: ' ร้านอาหารเฮียช้าง ไทย จีน อีสาน',
+mobile: ' 0932229005',
+image: 'r_logo_6.jpg',
+pikat: 'https://goo.gl/maps/3yXJkQA2gdyu9DAd8',
+),
+FoodList(
+name: ' ร้านบ้านปาย',
+website: '  11.00 น.-21.00 น.',
+facebook: ' ร้านบ้านปาย',
+mobile: ' 0843888434',
+image: 'r_logo_7.jpg',
+pikat: 'https://g.page/baanpai?share',
+),
+  FoodList(
+name: ' ร้าน52 food & coffee',
+website: '  10.00 น.-20.00 น.',
+facebook: ' ร้าน52 food & coffee',
+mobile: ' 0843888434',
+image: 'r_logo_8.jpg',
+pikat: 'https://goo.gl/maps/Wyr1whCRTd2oFcwZ8',
+), 
    
 ]; 
   
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[100],
+      backgroundColor: Colors.yellow[100],
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
+        centerTitle: true,
+        title: Text(
+          'ร้านอาหารใกล้ตัวคุณ',
+        ),
+        backgroundColor: Colors.green,
         elevation: 0,
         leading: IconButton(
-          onPressed: (){},
+          onPressed: (){
+             Navigator.pop(context);
+          },
           icon: Icon(
             Icons.arrow_back_ios,
           ),
         ),
         actions: <Widget>[
-          IconButton(
-            onPressed: (){},
-            icon: Icon(
-              Icons.search,
-            ),
-          ),
-          IconButton(
-            onPressed: (){},
-            icon: Icon(
-              Icons.camera_alt,
-            ),
-          ),
+          
         
         
         

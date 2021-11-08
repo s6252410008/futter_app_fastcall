@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_fastcall/models/foodlist.dart';
+import 'package:flutter_app_fastcall/models/list.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -53,13 +53,13 @@ class _ListFoodDetailUIState extends State<ListFoodDetailUI> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[100],
+      backgroundColor: Colors.yellow[100],
       appBar: AppBar(
         title: Text(
           'รายละเอียด',
         ),
         centerTitle: true,
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.brown[700],
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -78,7 +78,7 @@ class _ListFoodDetailUIState extends State<ListFoodDetailUI> {
               ),
               Image.asset(
                 'assets/images/' + widget.image,
-                width: 150.0,
+                width: 200.0,
               ),
               SizedBox(
                 height: 50.0,
@@ -87,9 +87,9 @@ class _ListFoodDetailUIState extends State<ListFoodDetailUI> {
                 width: MediaQuery.of(context).size.width - 80.0,
                 //height: 100.0,
                 child: Card(
-                  color: Colors.blueGrey[100],
+                  color: Colors.brown[100],
                   elevation: 10.0,
-                  shadowColor: Colors.blueGrey[200],
+                  shadowColor: Colors.yellow[200],
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5.0),
                   ),
@@ -103,7 +103,7 @@ class _ListFoodDetailUIState extends State<ListFoodDetailUI> {
                               Icons.person,
                             ),
                             Text(
-                              '  Name' + widget.name,
+                              '  ชื่อ : ' + widget.name,
                             ),
                           ],
                         ),
@@ -116,16 +116,16 @@ class _ListFoodDetailUIState extends State<ListFoodDetailUI> {
                         child: Row(
                           children: [
                             Icon(
-                              FontAwesomeIcons.globeAsia,
+                              FontAwesomeIcons.clock,
                             ),
                             Text(
-                              '  Website' + widget.website,
+                              '  เปิดให้ใช้บริการ : ' + widget.website,
                             ),
                             Expanded(
                               child: Align(
                                 alignment: Alignment.centerRight,
                                 child: Icon(
-                                  FontAwesomeIcons.desktop,
+                                  FontAwesomeIcons.calendarCheck,
                                 ),
                               ),
                             ),
@@ -143,7 +143,7 @@ class _ListFoodDetailUIState extends State<ListFoodDetailUI> {
                               FontAwesomeIcons.facebookF,
                             ),
                             Text(
-                              '   Facebook ' + widget.facebook,
+                              '   Facebook : ' + widget.facebook,
                             ),
                             Expanded(
                               child: Align(
@@ -167,7 +167,7 @@ class _ListFoodDetailUIState extends State<ListFoodDetailUI> {
                               FontAwesomeIcons.mobile,
                             ),
                             Text(
-                              '  Moblie' + widget.mobile,
+                              '  โทร : ' + widget.mobile,
                             ),
                           ],
                         ),
@@ -194,7 +194,7 @@ class _ListFoodDetailUIState extends State<ListFoodDetailUI> {
                     ),
                     label: Text('เปิดเว็ป'),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.blueGrey,
+                      primary: Colors.blue,
                       fixedSize: Size(
                         130.0,
                         50.0,
@@ -212,7 +212,7 @@ class _ListFoodDetailUIState extends State<ListFoodDetailUI> {
                     ),
                     label: Text('โทรเลย'),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.blueGrey,
+                      primary: Colors.green,
                       fixedSize: Size(
                         130.0,
                         50.0,
@@ -230,7 +230,7 @@ class _ListFoodDetailUIState extends State<ListFoodDetailUI> {
                     ),
                     label: Text('พิกัด'),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.blueGrey,
+                      primary: Colors.red,
                       fixedSize: Size(
                         130.0,
                         50.0,

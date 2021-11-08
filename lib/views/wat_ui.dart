@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_fastcall/models/foodlist.dart';
+import 'package:flutter_app_fastcall/models/list.dart';
+import 'package:flutter_app_fastcall/views/home_ui.dart';
 import 'package:flutter_app_fastcall/views/listfood_detail_ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class WatUI extends StatefulWidget {
@@ -37,36 +38,79 @@ mobile: ' 0816106673',
 image: 'wat_logo_3.jpg',
 pikat: 'https://goo.gl/maps/cnKL71sN5ADhdcg96',
 ),
-   
+   FoodList(
+name: '  วัดบรมราชากาญจนาภิเษกอนุสรณ์',
+website: '  06.00-18.00 น.',
+facebook: '  วัดบรมราชากาญจนาภิเษกอนุสรณ์',
+mobile: ' 0-2571-1155',
+image: 'wat_logo_5.jpg',
+pikat: 'https://www.facebook.com/Wat.Boromracha.Temple',
+),
+   FoodList(
+name: '  วัดสังฆทาน',
+website: '  08.00-18.00 น.',
+facebook: '  วัดสังฆทาน',
+mobile: ' 0-2496-1240',
+image: 'wat_logo_5.1.jpg',
+pikat: 'https://goo.gl/maps/oP1HFZexJRZGTcPh6',
+),
+   FoodList(
+name: '  วัดบางจาก ',
+website: '  08.00-17.00 น.',
+facebook: '  -',
+mobile: ' -',
+image: 'wat_logo_6.jpg',
+pikat: 'https://goo.gl/maps/DB1KtD1DcxmT6TWJA',
+),
+   FoodList(
+name: '  วัดบางไผ่ บางบัวทอง',
+website: '  08.00-16.30 น.',
+facebook: '  วัดบางไผ่ บางบัวทอง',
+mobile: ' 0816106673',
+image: 'wat_logo_7.jpg',
+pikat: 'https://goo.gl/maps/GHnE5tiV3hyerK7b7',
+),
+   FoodList(
+name: '  วัดกู้ พระนางเรือล่ม',
+website: '  08.00-17.00 น น.',
+facebook: '  วัดกู้-พระนางเรือล่ม',
+mobile: ' 08-6533-9171',
+image: 'wat_logo_8.1.jpg',
+pikat: 'https://goo.gl/maps/urPCMh4jjNUZGBSF7',
+),
+
+
+
+
+
+
+
+
+
    
 ]; 
   
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[100],
+      backgroundColor: Colors.yellow[100],
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
+        centerTitle: true,
+        title: Text(
+          'วัฒนธรรมที่ใกล้ตัวคุณ',
+        ),
+        backgroundColor: Colors.yellow[700],
         elevation: 0,
         leading: IconButton(
-          onPressed: (){},
+          onPressed: (){
+             Navigator.pop(context);
+          },
           icon: Icon(
             Icons.arrow_back_ios,
           ),
         ),
         actions: <Widget>[
-          IconButton(
-            onPressed: (){},
-            icon: Icon(
-              Icons.search,
-            ),
-          ),
-          IconButton(
-            onPressed: (){},
-            icon: Icon(
-              Icons.camera_alt,
-            ),
-          ),
+          
         
         
         
